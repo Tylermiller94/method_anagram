@@ -1,5 +1,6 @@
 class String
   define_method(:anagrams) do
-self
+    letters_array = self.split("")
+    letters_array
   end
 end
