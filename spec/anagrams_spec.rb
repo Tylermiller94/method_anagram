@@ -11,6 +11,9 @@ describe('anagrams') do
     expect('race'.anagrams?('care')).to(eq("These words are anagrams."))
   end
   it("checks if two strings are palindromes") do
-  expect('racecar'.palindromes?('racecar')).to(eq("These words are palindromes."))
+    expect('racecar'.palindromes?('racecar')).to(eq("These words are palindromes."))
+  end
+  it("removes non numbers from the string") do
+    expect('1ri'.anagrams?('ri')).to(eq("These words are anagrams."))
   end
 end
